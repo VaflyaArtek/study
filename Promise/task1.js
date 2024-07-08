@@ -1,3 +1,5 @@
+import {urls, getPostsList, getUserInfo, getCommentoToPost} from './main.js';
+
 getPostsList(urls.postsList)
     .then(posts => {
         console.log('Post list: ', posts);
