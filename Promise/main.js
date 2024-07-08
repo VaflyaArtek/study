@@ -8,7 +8,7 @@ const urls = {
     },
 };
 
-function getPostsList(url) {
+function fetchData(url) {
     return fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -18,24 +18,4 @@ function getPostsList(url) {
         });
 }
 
-function getUserInfo(url, userId) {
-    return fetch(url(userId))
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network failed');
-            }
-            return response.json();
-        });
-}
-
-function getCommentsToPost(url, postId) {
-    return fetch(url(postId))
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network failed');
-            }
-            return response.json();
-        });
-}
-
-export {urls, getPostsList,getUserInfo, getCommentsToPost};
+export {urls, fetchData};
