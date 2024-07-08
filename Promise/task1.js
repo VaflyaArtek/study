@@ -1,4 +1,3 @@
-// task 1
 const urls = {
     postsList: 'https://jsonplaceholder.typicode.com/posts',
     userInfo(userId) {
