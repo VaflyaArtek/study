@@ -1,4 +1,4 @@
-import {urls, getPostsList, getUserInfo, getCommentoToPost} from './main.js';
+import {urls, getPostsList, getUserInfo, getCommentsToPost} from './main.js';
 
 getPostsList(urls.postsList)
     .then(posts => {
