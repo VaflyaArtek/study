@@ -6,3 +6,8 @@ This example demonstrates how to make three consecutive requests to the same API
 2. Get information about a user with a specific id.
 3. Get comments on a post with a specific id .
 ---
+## Task 2: Data processing chain
+## Write the code that gets the list of posts and then:
+1. Filters posts with userId equal to 5.
+2. For each of these posts, gets a list of comments.
+---
