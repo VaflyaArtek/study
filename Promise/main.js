@@ -18,6 +18,16 @@ function getPostsList(url) {
         });
 }
 
+function getUserInfo(url, userId) {
+    return fetch(url(userId))
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network failed');
+            }
+            return response.json();
+        });
+}
+
 function getCommentsToPost(url, postId) {
     return fetch(url(postId))
         .then(response => {
@@ -28,4 +38,4 @@ function getCommentsToPost(url, postId) {
         });
 }
 
-export {urls, getPostsList, getCommentsToPost};
+export {urls, getPostsList,getUserInfo, getCommentsToPost};
