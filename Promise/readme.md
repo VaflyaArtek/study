@@ -12,5 +12,5 @@ This example demonstrates how to make three consecutive requests to the same API
 2. For each of these posts, gets a list of comments.
 ---
 ## Task 3: Error handling
-1. Write a code that makes a request to a non-existent resource (for example, GET https://jsonplaceholder.typicode.com/invalid) and
+1. Write a code that makes a request to a non-existent resource (for example, GET `https://jsonplaceholder.typicode.com/invalid`) and
    handles the error that occurs. 
