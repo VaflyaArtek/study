@@ -1,5 +1,6 @@
 const urls = {
     postsList: 'https://jsonplaceholder.typicode.com/posts',
+    invalidAddress: 'https://jsonplaceholder.typicode.com/invalid',
     userInfo(userId) {
         return `https://jsonplaceholder.typicode.com/users/${userId}`;
     },
